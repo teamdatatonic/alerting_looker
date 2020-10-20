@@ -16,14 +16,14 @@ See the Screenshots section at the bottom of this readme for examples
 
 Using stats, LookML and scheduling capabilities,  we are able to track and alert on KPIs in near real time.
 Anomalies detected in KPIs will trigger alerts, which will be sent to users using Looker scheduling capabilities.
-The thresolds for alerts is dynamic, with different approaches to defining what an "anomaly" is.
+The thresholds for alerts is dynamic, with different approaches to defining what an "anomaly" is.
 
-This block has weighted averages set up as a default to detect anomalies. But you can also provide a linear regresion layer, or more advanced modelling (e.g. using BQML) should you wish. See "how to add more anomaly detection methods"
+This block has weighted averages set up as a default to detect anomalies. But you can also provide a linear regression layer, or more advanced modelling (e.g. using BQML) should you wish. See "how to add more anomaly detection methods"
 
 
 ## Why is this block needed?
 Looker has some "alert" functionality built in, but this is built on static hardcoded values, with a dashboard as the entry point for the users to set one up.
-Where there is a requirement for an alert trigger to have a dynamically changing value, we need to switch to the Lookml layer of looker to set this up, and utlise lookers scheduling capabilities for the "action".
+Where there is a requirement for an alert trigger to have a dynamically changing value, we need to switch to the Lookml layer of looker to set this up, and utilize lookers scheduling capabilities for the "action".
 This allows looker to be used as a sophisticated alerting system, without needing to involve any other middleware. Typical use cases involve alerting on how many orders have been added to basket, which we could check every 5mins compared to same time yesterday, last week and last year.
 
 ## How to use this block
@@ -58,7 +58,7 @@ It is recommended you watch the "Creating a Sophisticated Alerting System with L
 
 -- If testing or looking back at historical alerts in the explore set both to NO
 
--- Optional filters including changing sensitivit or weights for calculating the reference value.
+-- Optional filters including changing sensitivity or weights for calculating the reference value.
 
 -- Ensure in the schedule under *advanced options* you set *Send this schedule if there are results*
 
